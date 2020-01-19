@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMessageLabel.text = ""
     }
 
     @IBAction func showMessageButton(_ sender: UIButton) {
