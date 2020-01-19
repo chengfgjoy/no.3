@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var showMessageLabel: UILabel!
+        
+    @IBOutlet weak var ImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showMessageButton(_ sender: UIButton) {
+        showMessageLabel.text = "You are awesome!"
+        ImageView.image = UIImage(named:"WechatIMG167")
 }
-
+}
