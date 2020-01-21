@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,57 +12,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="no_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPD-nR-j0b">
-                                <rect key="frame" x="16" y="20" width="382" height="0.0"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
-                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEY-tF-d3G">
-                                <rect key="frame" x="51" y="112" width="312" height="321"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acr-dC-LRI">
+                                <rect key="frame" x="16" y="239" width="343" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="5HU-4k-VbA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEY-tF-d3G">
+                                <rect key="frame" x="73" y="141" width="249" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="15"/>
                                 <state key="normal" title="show message"/>
                                 <connections>
                                     <action selector="showMessageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wu-jn-fzx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="acr-dC-LRI">
-                                <rect key="frame" x="16" y="441" width="382" height="275"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="275" id="5HU-4k-VbA"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPD-nR-j0b">
+                                <rect key="frame" x="63" y="44" width="249" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acr-dC-LRI" secondAttribute="trailing" constant="16" id="2aI-TK-Plb"/>
-                            <constraint firstItem="IEY-tF-d3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="4L6-hn-SX1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="acr-dC-LRI" secondAttribute="bottom" constant="20" id="65A-QB-jka"/>
-                            <constraint firstItem="acr-dC-LRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88l-C3-9oY"/>
-                            <constraint firstItem="acr-dC-LRI" firstAttribute="top" secondItem="IEY-tF-d3G" secondAttribute="bottom" constant="8" id="HfZ-lc-R9h"/>
-                            <constraint firstItem="IEY-tF-d3G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="112" id="IMc-Ba-Le0"/>
-                            <constraint firstItem="IEY-tF-d3G" firstAttribute="centerX" secondItem="nPD-nR-j0b" secondAttribute="centerX" id="NUh-a9-J7f"/>
-                            <constraint firstItem="nPD-nR-j0b" firstAttribute="centerX" secondItem="acr-dC-LRI" secondAttribute="centerX" id="fwa-e0-9ni"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="acr-dC-LRI" secondAttribute="bottom" constant="20" id="gbJ-ak-sOk"/>
-                            <constraint firstItem="acr-dC-LRI" firstAttribute="top" secondItem="IEY-tF-d3G" secondAttribute="bottom" constant="8" symbolic="YES" id="kY3-Sd-Yuw"/>
-                            <constraint firstItem="acr-dC-LRI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nZB-Fi-rX0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="acr-dC-LRI" secondAttribute="bottom" constant="20" id="p6A-oq-4q1"/>
-                            <constraint firstItem="IEY-tF-d3G" firstAttribute="top" secondItem="nPD-nR-j0b" secondAttribute="bottom" constant="92" id="wiY-Ar-vek"/>
-                            <constraint firstItem="nPD-nR-j0b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="yhv-oJ-ZJi"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ImageView" destination="acr-dC-LRI" id="H5R-ft-58w"/>
+                        <outlet property="ImageView" destination="acr-dC-LRI" id="SBy-2L-q2f"/>
                         <outlet property="showMessageLabel" destination="nPD-nR-j0b" id="EQM-wd-CxY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="109.85915492957747"/>
+            <point key="canvasLocation" x="134.78260869565219" y="109.15178571428571"/>
         </scene>
     </scenes>
 </document>

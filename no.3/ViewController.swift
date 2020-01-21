@@ -11,16 +11,30 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var showMessageLabel: UILabel!
-        
     @IBOutlet weak var ImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showMessageLabel.text = ""
     }
 
     @IBAction func showMessageButton(_ sender: UIButton) {
-        showMessageLabel.text = "You are awesome!"
-        ImageView.image = UIImage(named:"WechatIMG167")
+    let message1 = "You are awesome!"
+    let message2 = "You are great!"
+    let message3 = "You da bomb"
+  
+  
+        if showMessageLabel.text == message1{
+            showMessageLabel.text = message2
+             ImageView.image = UIImage(named:"WechatIMG167")
+        }else if showMessageLabel.text == message2{
+            showMessageLabel.text = message3
+            ImageView.image = UIImage (named:"WechatIMG166")
+        } else {
+            showMessageLabel.text  = message1
+            ImageView.image = UIImage (named:"WechatIMG273")
+            
+        }
+        
 }
 }
