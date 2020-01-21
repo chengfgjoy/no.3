@@ -31,6 +31,11 @@
                                 <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM2-b9-0OB">
+                                <rect key="frame" x="118" y="210" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="show another message"/>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acr-dC-LRI">
                                 <rect key="frame" x="16" y="306" width="343" height="275"/>
                                 <constraints>
@@ -44,6 +49,7 @@
                     <connections>
                         <outlet property="ImageView" destination="acr-dC-LRI" id="SBy-2L-q2f"/>
                         <outlet property="showMessageLabel" destination="nPD-nR-j0b" id="EQM-wd-CxY"/>
+                        <outlet property="showanotherMessageLabel" destination="qM2-b9-0OB" id="vFp-qF-ktr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
